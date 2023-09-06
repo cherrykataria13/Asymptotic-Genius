@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  <script src="require.config.js" ></script>
+
+  <!-- <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script> -->
+</head>
+<meta charset="utf-8">
+<style type="text/css">
+  .chartbox {
+    width: 100%;
+    height: 400px;
+  }
+</style>
+<body>
+  <nav class="navbar">
+    <a href="first.html" class="navbar__logo">ASYMPTOTIC GENIUS</a>
+    <div class="navbar__toggle" id="mobile-menu">
+    </div>
+    <div class="navbar__menu">
+      <a href="first.html" class="navbar__link">Home</a>
+      </div>
+  </nav>
+  <h1>BIG THETA PLOT</h1>
+  <div class ="box">
+    <h1 >INSTRUCTIONS FOR ALGEBRAIC EXPRESSION</h1>
+    <ul>
+      <li>Use 'n' as a parameter for your algebraic equation</li>
+      <li>You can make use of following symbols:
+        <ol>
+          <li>Arithmetic operators - '*' , '+' , '-'</li>
+          <li>Power operator - '^'</li>
+        </ol>
+      </li>
+      <li>Increment and decrement is not allowed</li>
+      <li>Logical operators are not allowed</li>
+      <li>Log can be used in this form - log(n),nlog(n) </li>
+      <li>Enter the arithmetic expresion in sorted order of powers e.g. 3*n^100+4*n^90 </li>
+    </ul>
+  </div>
+  <div class ="data">
+    <div class = "block">
+        <label>Enter the Function</label>
+        <input type="text" id="input-field" placeholder="Enter a function">
+    </div>
+    <div class = "block">
+      <label>C value</label>
+      <input type="text" id="inputC-field" placeholder="C Value">
+    </div>
+    <div class = "block">
+      <label>n<subscipt>0</subscipt> value</label>
+      <input type="text" id="input_n_not-field" placeholder="N-Not Value">
+    </div>
+    <button id = "my-button" class = "btn">PLOT</button>
+    <div class="chartbox">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>  
+ <script src="theta.js"></script>
+</body>
+
+</html>
